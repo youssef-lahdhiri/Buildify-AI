@@ -250,7 +250,7 @@ export default function ClientGreeting({ params }: any) {
           </div>
         </div>
         <div className=" w-[69vw] mr-2 border-[rgba(255,255,255,0.09)] border-1 bg-[#1A1A28] h-[85vh] rounded-md  overflow-hidden ">
-          {id != "" && frag != null && (
+          {messages.length>1?id != "" && frag != null && (
             // <div className=' w-[69vw] mr-2 border-[rgba(255,255,255,0.09)] border-1 bg-[#1A1A28] h-[85vh] rounded-md  overflow-hidden '>
             <Tabs defaultValue="preview" className="  ">
               <TabsList className="bg-black text-center">
@@ -296,7 +296,7 @@ export default function ClientGreeting({ params }: any) {
                 {!isLoading && <If url={frag.sandboxUrl} />}
               </TabsContent>
             </Tabs>
-          )}
+          ):<p>{waitingMessages[index]}</p> }
         </div>
       </div>
     </div>

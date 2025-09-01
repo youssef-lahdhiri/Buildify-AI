@@ -1,9 +1,5 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-# AI B Project
-
-# Project Title
-
-🚀 Buildify AI
+# 🚀 Buildify AI
 
 Buildify AI is a smart platform that helps creators, founders, and developers quickly build, prototype, and launch AI-powered apps without deep technical expertise.
 
