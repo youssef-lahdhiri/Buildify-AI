@@ -42,7 +42,6 @@ export const appRouter = createTRPCRouter({
 
   }),
   invoke: baseProcedure.input(z.object({projectId:z.string(),userId:z.string(), value: z.string() })).mutation(async ({ input  }) => {
-    // await prisma.message.create({data:{content:input.value,type:"RESULT",role:"USER"}})
     await inngest.send({
       name: "test/hello.world",
       data: {

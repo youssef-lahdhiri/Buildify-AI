@@ -296,7 +296,12 @@ export default function ClientGreeting({ params }: any) {
                 {!isLoading && <If url={frag.sandboxUrl} />}
               </TabsContent>
             </Tabs>
-          ):<p>{waitingMessages[index]}</p> }
+          ):messages.length==0?null:<p className="  ease-linear  h-full w-full items-center justify-center  flex ">
+<p className="  bg-[#c7c7d6] rounded-full size-6 animate-bounce delay-200"></p>
+<p className="  bg-[#c7c7d6] rounded-full size-6 animate-bounce delay-100"></p>
+<p className=" bg-[#c7c7d6] rounded-full size-6 animate-bounce"></p>
+
+          </p> }
         </div>
       </div>
     </div>
